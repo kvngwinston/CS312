@@ -23,8 +23,38 @@
 
 
     <section class = "blue">
-        <h1>About</h1>
-        <p></p>
+            <div class = "profile" > 
+            
+                <div id = "description">
+                    
+                    <h3>Hi my name is </h3>
+                    <h1>Winston Essibu.</h1>
+                    <h2>I build things for the web</h2>
+                    <h3>A passionate web app developer. I tend to make use of modern web
+                         technologies to build websites that looks great,
+                         feels fantastic, and functions correctly.</h3>
+                    
+                    <div id = "social-media">
+                        <img src="assets\github logo.svg" width = 50px href = "#">
+                        <img src = "assets\linkedn-logo.svg" width = 50px href = "#">
+                    </div>
+                </div>
+
+                <img id = "profile-picture" src = "assets/Profie Picture.jfif"></img>
+            </div>
+
+
+    </section>
+
+    <section class = "black">
+
+        <h1> About me</h1>
+        <p> I am very passionate about software development and data-driven solutions, 
+            I bring a versatile skill set honed through coursework and hands-on projects. 
+            Proficient in Java, Python, mySQL, HTML, CSS, and JavaScript, 
+            I leverage my expertise in Data Structures & Algorithms, statistics, 
+            calculus, and database management to drive impactful results. </p> 
+
     </section>
 
     <section class = "black">
@@ -65,7 +95,7 @@ body {
 margin: 0;
 font-family: 'Prompt', sans-serif;
 color: white;
-background: #202731;
+background: #18191a;
 overflow-x: hidden;
 }
 
@@ -74,16 +104,16 @@ position: relative;
 display: flex;
 flex-direction: column;
 align-items: center;
-min-height: 400px;
+min-height: 600px;
 padding-top: 100px;
 }
 
 .blue {
-background: #3c31dd;
+background: #18191a;
 }
 
 .red {
-background: #dd3f31;
+background: #c7918c;
 }
 
 .pink {
@@ -116,4 +146,46 @@ background: #0f0f10;
     background-color: #ddd;
     color: black;
 }
+
+.profile {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#description {
+    width: 50%;
+}
+
+#description h1 {
+    font-size: 70px;
+    margin : 5px;
+}
+
+#description h2 {
+    font-size: 50px;
+    margin : 10px;
+
+}
+
+#description h3 {
+    font-size: 15px;
+    margin : 2px;
+    padding: 10;
+
+}
+
+
+#profile-picture {
+    width : 200px;
+    border-radius: 10%;
+    border: 10 px;
+    margin-right: 70px;
+}
+
+#social-media {
+    padding: 10px;
+
+}
 </style>
+
