@@ -11,18 +11,17 @@
         <nav class = "navbar">
             <h1>My Portfolio</h1>
             <ul>
-                <a>About</a>
-                <a>Experience</a>
-                <a>Education</a>
-                <a>Projects</a>
-                <a>Achievements</a>
-                <a>Contact</a>
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href = "#education">Education</a>
+                <a href="#projects">Projects</a>
+                <a href = "#contact">Contact</a>
             </ul>
         </nav>
     </header>
 
 
-    <section class = "black">
+    <section  class = "black">
             <div class = "profile" > 
             
                 <div id = "description">
@@ -35,8 +34,13 @@
                          feels fantastic, and functions correctly.</h3>
                     
                     <div id = "social-media">
-                        <img src="assets\github logo.svg" width = 50px href = "#">
-                        <img src = "assets\linkedin.png" width = 50px href = "#">
+                        <a href = "https://github.com/kvngwinston">
+                            <img src="assets\github logo.svg" width = 50px >
+                        </a>
+                        <a href = "https://www.linkedin.com/in/winston-essibu-5a4435220/">
+                            <img src = "assets\linkedin.png" width = 50px >
+                        </a>
+                        
                     </div>
                 </div>
 
@@ -46,7 +50,7 @@
 
     </section>
 
-    <section class = "black">
+    <section id = "about" class = "black">
         <h1>About me</h1>
         <div  id = "about-me">
             <img id = "profile-picture" src = "assets/Profie Picture.jfif"></img>
@@ -80,7 +84,7 @@
 
     </section>
 
-    <section class ="blue">
+    <section id = "experience" class ="blue">
         <h1>Experience</h1>
 
         <div class ="card">
@@ -111,24 +115,71 @@
 
     </section>
 
-    <section class = "dark">
+    <section id = "education" class = "dark">
         <h1>Education</h1>
-        <p>Crazyness</p>
+        <div class= "education">
+            <div class = "education-card">
+                <h2>Loyola University Chicago</h2>
+                <p>MS. in Computer Science in Artificail Intelligence</p>
+                <p>2024 - 2025</p>
+            </div>
+
+            <div class = "education-card">
+                <h2>Loyola University Chicago</h2>
+                <p>BS. in Computer Science</p>
+                <p>2020 - 2024</p>
+            </div>        
+            
+            <div class = "education-card">
+                <h2>Ideal College</h2>
+                <p>High School</p>
+                <p>2017 - 2020</p>
+            </div>
+        </div>
     </section>
 
-    <section class = red>
+    <section id = "projects" class = "dark">
         <h1>Projects</h1>
-        <p>Oh my goodness</p>
+
+        <div class = "projects">
+            <div class = "project-card"> 
+                <h2>Jeopardy GUI application </h2>
+                <ul>
+                    <li>Utilized Java Swing to create a graphical user interface jeopardy game-based application.</li>
+                    <li>Implemented data structures and algorithms such as HashMap’s, stacks, queues, LinkedList’s and priority queues.</li>
+                    <li>Applied concepts such as inheritance and polymorphism to create the structure of the application.</li>
+                    <li>Utilized software engineering concepts such as model-view-controller to handle the organization of the application.</li>
+                </ul>
+            </div>
+
+    
+            <div class = "project-card"> 
+                <h2>Jeopardy GUI application </h2>
+                <ul>
+                    <li>I developed a feature-rich flashcard application in Java Swing.</li>
+                    <li>I applied object-oriented principles such as abstraction and encapsulation for a modular architecture.</li>
+                    <li>I leveraged	interfaces	to	ensure	efficient	communication	between	application	components</li>
+                </ul>
+            </div>
+
+            <div class = "project-card"> 
+                <h2>Jeopardy GUI application </h2>
+                <ul>
+                    <li>Developed a Java-based timetable application to streamline school and time management.</li>
+                    <li>Employed Java Swing components including JLabels, JPanels, and JList to design a user-friendly interface.</li>
+                    <li>Proficiently organized and planned school activities, showcasing effective time management skills</li>
+                </ul>
+            </div>
+        </div>
+
+        
     </section>
 
     <section>
-        <h1>Achievements</h1>
-        <p>This is crazy</p>
-    </section>
-
-    <section>
-        <h1>Contact</h1>
-        <p>Wow</p>
+        <h1 id = "contact" class = "black">Contact</h1>
+        <p>My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
+        </p>
+        <p>email: eessibu@luc.edu</p>
     </section>
 
 </body>
@@ -282,12 +333,48 @@ h1 {
     text-align: center;
 }
 .card li{
-    margin: 50px;
+    margin: 30px;
 }
 
 
 .card h3 {
     text-align: center;
+}
+
+.education{
+    display : flex
+}
+
+.education-card{
+    width: 400px;
+    min-height: 100px;
+    border: 3px solid white;
+    background-color: #29292b;
+    margin: 20px;
+}
+
+.education-card h2{
+    text-align: center;
+}
+
+.education-card p{
+    text-align: center;
+
+}
+.project-card{
+    width: 900px;
+    min-height: 100px;
+    border: 3px solid white;
+    background-color: #29292b;
+    margin: 20px;
+}
+
+.project-card h2 {
+    text-align: center;
+}
+
+.project-card li{
+    margin: 30px;
 }
 </style>
 
